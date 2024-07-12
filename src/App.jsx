@@ -47,7 +47,7 @@ function App() {
         <button>Search</button>
       </form>
       <div>
-        <h4>Definition</h4>
+        <h4>Definition :</h4>
         <p id="def"></p>
       </div>
     </>
