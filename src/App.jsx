@@ -23,7 +23,10 @@ function App() {
     }
 
     function findWord(currentWord) {
-      let meaning = "";
+      if (currentWord === "") {
+        return "";
+      }
+      let meaning = "Word not found in the dictionary.";
       dict.forEach((ele) => {
         if (ele.word === currentWord) {
           meaning = ele.meaning;
