@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <h1>Dicionary App</h1>
+      <h1>Dictionary App</h1>
 
       <form
         onSubmit={(e) => {
@@ -47,7 +47,7 @@ function App() {
         <button>Search</button>
       </form>
       <div>
-        <h4>Definition :</h4>
+        <h4>Definition:</h4>
         <p id="def"></p>
       </div>
     </>
