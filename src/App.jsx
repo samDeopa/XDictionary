@@ -18,9 +18,7 @@ function App() {
   useEffect(() => {
     const meaning = findWord(word);
 
-    if (meaning != "") {
-      document.getElementById("def").innerText = meaning;
-    }
+    document.getElementById("def").innerText = meaning;
 
     function findWord(currentWord) {
       if (currentWord === "") {
@@ -28,7 +26,7 @@ function App() {
       }
       let meaning = "Word not found in the dictionary.";
       dict.forEach((ele) => {
-        if (ele.word === currentWord) {
+        if (ele.word.toLowerCase() === currentWord.toLowerCase()) {
           meaning = ele.meaning;
         }
       });
