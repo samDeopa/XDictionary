@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState(" ");
   const [loaded, setLoaded] = useState(false);
   const dict = [
     {
